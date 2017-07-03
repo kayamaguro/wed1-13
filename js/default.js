@@ -13,7 +13,7 @@ var diff= target.getTime()- now.getTime();
 var counter= separate_Time(diff);
 ElementById('form').select.onchange=function(){
 document.getElementById('form').select.value;}
-  '東京オリンピックまで…
+  '東京オリンピックまで…'
 counter[5]+'年'+
 counter[4]+'月'+
 counter[3]+'日'+
