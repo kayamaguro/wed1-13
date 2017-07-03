@@ -67,3 +67,8 @@ document.getElementById('cookie').textContent='はじめまして';
 //新値の保存
 var current_time =new Date();
 setCookie('lastDate',current_time.toSring(),7);
+
+//クッキーの削除
+document.getElementBtId('remove_cookie').onsubmit = function(){
+setCookie('lastDate',"",0);
+  };
