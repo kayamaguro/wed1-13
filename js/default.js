@@ -46,7 +46,7 @@ var st="";
 var ed="";
 if(0 < document.cookie.length){
 //値取り出し
-st=document.cookie.indexOf(c_name+"=";)
+st=document.cookie.indexOf(c_name+"=");
 if(st!=-1){
 st=st+c_name.length+1;
   ed=document.cookie.indexOf(";",st);
