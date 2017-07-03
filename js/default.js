@@ -8,8 +8,11 @@ return[sec,min,hours,days,month,year];
 }
 
 var now=new Date();
-var counter= separate_time(now);
+var target= new Date(2020,7,24,0,0,0,0);
+var diff= target.getTime()- now.getTime();
+var counter= separate_Time(diff);
 document.getElementById('countdown').textContent=
+  '東京オリンピックまで…'+
 counter[5]+'年'+
 counter[4]+'月'+
 counter[3]+'日'+
