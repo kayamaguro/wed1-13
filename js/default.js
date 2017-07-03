@@ -55,3 +55,15 @@ st=st+c_name.length+1;
 }
   return"";
 }
+
+//読み込んで文章替え
+var last_date=getCookie('lastDate');
+if(last_date){
+document.getElementById('cookie').textContent='前回訪れた時間:'+last_date;
+}else{
+document.getElementById('cookie').textContent='はじめまして';
+}
+
+//新値の保存
+var current_time =new Date();
+setCookie('lastDate',current_time.toSring(),7);
